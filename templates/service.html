@@ -1,0 +1,265 @@
+
+<!doctype html>
+<body>
+  <nav id="navbar">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a href="{{ url_for('index') }}" class="nav-link active" aria-current="page">Gray Tech</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('service') }}" class="nav-link active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('about') }}" class="nav-link active">About</a>
+        <li class="nav-item">
+            <a href="{{ url_for('sign_up') }}" class="nav-link active">Sign Up</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1 class="header">Services</h1> 
+<div class="free">
+    <h4 class="free-text">Free</h4>
+</div>
+    <div class="lower-body">
+      <h1 class="o">0$/mo</h1>
+      <ul class="list">
+        <li>limited access to Videos and Articles</li>
+        <li> Email Support</li>
+      </ul>
+      <button class="button">Sign Up For free</button>
+    </div>
+<div class="five">
+  <h4 class="five-text">Pro</h4>
+</div>
+    <div class="body-lower">
+      <h1 class="fives">5$/mo</h1>
+      <ul class="second-list">
+        <li> Access to All Videos and Articles</li>
+        <li>Email Support</li>
+      </ul>
+      <button class="button2">Get Started</button>
+    </div>
+<div class="triangle"></div>
+<div class="triangle2"></div>
+<div class="triangle3"></div>
+<div class="triangle4"></div>
+<div class="triangle5"></div>
+<div class="triangle6"></div>
+</body>
+</html>
+</body>
+
+</html>
+<style>
+  .button2 {
+      border-radius: 25px;
+      background-color:#FEFAE0;
+      color: #283618;
+      width: 400px;
+      height: 50px;
+      top: 70%;
+      position: fixed;
+  }
+  .second-list {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    margin-right: 30px;
+    color: #283618;
+  }
+  
+  
+  .five {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-color: #606C38;
+    border-style: solid;
+    background: #BC6C25;
+    position: fixed;
+    top: 45%;
+    right: 30%;
+    width: 397px;
+    text-align: center;
+    z-index: 10;
+    font-family: 'poppins', sans-serif;
+  }
+  .body-lower {
+    border-radius: 25px;
+    background-color: #DDA15E;
+    position: fixed;
+    border-color: #606C38;
+    top: 50%;
+    right: 30%;
+    width: 400px;
+    height: 210px;
+  }
+  .fives {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    color: #283618;
+  }
+  .button {
+      border-radius: 25px;
+      background-color:#FEFAE0;
+      color: #283618;
+      width: 400px;
+      height: 50px;
+  }
+  .list {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    margin-right: 30px;
+    color: #283618;
+  }
+  
+  
+  .free {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-color: #606C38;
+    border-style: solid;
+    background: #BC6C25;
+    position: fixed;
+    top: 45%;
+    right: 60%;
+    width: 397px;
+    text-align: center;
+    z-index: 10;
+    font-family: 'poppins', sans-serif;
+  }
+  .lower-body {
+    border-radius: 25px;
+    background-color: #DDA15E;
+    position: fixed;
+    border-color: #606C38;
+    top: 50%;
+    right: 60%;
+    width: 400px;
+    height: 210px;
+  }
+  .o {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    color: #283618;
+  }
+  body {
+      background-color:#FEFAE0;
+    }
+    #navbar {
+      z-index: 20;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color:#BC6C25;
+      border-bottom: 20px #606C38;
+      Border-bottom-style: solid;
+    }
+    nav ul {
+      margin: 20px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 50px;
+      margin-left: 110px;
+    }
+    a {
+      text-decoration: none;
+      color: #606C38;
+      font-size: 35px;
+      font-family: 'poppins', sans-serif;
+    }
+    a:hover {
+      color: #FEFAE0;
+    }
+    .triangle {
+      right: 0%;
+      top: 0%;
+      border-left: 650px solid transparent;
+  	  border-top: 605px solid #283618;
+      position: fixed;
+      z-index:6
+    }
+    .triangle2 {
+      right: 0%;
+      top: 0%;
+      border-left: 450px solid transparent;
+  	  border-top: 405px solid #606C38;
+      position: fixed;
+      z-index:7
+    }
+    .triangle3 {
+      right: 0%;
+      top: 0%;
+      border-left: 275px solid transparent;
+  	  border-top: 300px solid #BC6C25;
+      position: fixed;
+      z-index:8
+    }
+    .triangle4 {
+      right: 0%;
+      top: 0%;
+      border-left: 175px solid transparent;
+  	  border-top: 200px solid #DDA15E;
+      position: fixed;
+      z-index:9
+    }
+    .header {
+      margin-top:200px;
+      font-size: 75px;
+      font-family:'poppins', sans-serif;
+      text-align: center;
+      color: #BC6C25;
+      right: 50%;
+      position: fixed;
+    }
+    .triangle5 {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    border-right: 250px solid transparent;
+  	border-bottom: 250px solid #BC6C25;
+    position: fixed;
+    z-index: 5;
+    }
+    .triangle6 {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    border-right: 400px solid transparent;
+  	border-bottom: 250px solid #DDA15E;
+    position: fixed;
+    z-index: 3;
+    }
+    .video {
+      background-color: #DDA15E;
+      border-radius: 25px;
+      position: fixed;
+      border-color:#606C38;
+      font-family: 'poppins', sans-serif;
+      font-size: 25px;
+      right: 30%;
+      color: #FEFAE0;
+    }
+    
+    .articles {
+      background-color: #DDA15E;
+      border-radius: 25px;
+      position: fixed;
+      border-color:#606C38;
+      font-family: 'poppins', sans-serif;
+      font-size: 25px;
+      right: 70%;
+      color: #FEFAE0;
+    }
+    button:hover {
+      background-color: #BC6C25;
+    }
+</style>

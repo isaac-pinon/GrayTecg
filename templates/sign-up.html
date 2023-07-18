@@ -1,0 +1,215 @@
+
+<!doctype html>
+<body>
+  <nav id="navbar">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a href="{{ url_for('index') }}" class="nav-link active" aria-current="page">Gray Tech</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('service') }}" class="nav-link active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('about') }}" class="nav-link active">About</a>
+        <li class="nav-item">
+            <a href="{{ url_for('sign_up') }}" class="nav-link active">Sign Up</a>
+      </ul>
+ 
+</nav>
+<div class="triangle"></div>
+<div class="triangle2"></div>
+<div class="triangle3"></div>
+<div class="triangle4"></div>
+<div class="signup-title">
+  <span style="color:#DDA15E;">Sign</span>
+  <span style="color:#606C38;">Up</span>
+</div>
+<div class="signup">
+<form action="/sign-up" method="POST">
+  <div class="form-group">
+      <label for="username">Username</label>
+      <input type="username" class="form-control" id="exampleInputUsername1"  name="username" aria-describedby="usernameHelp"
+          placeholder="Username">
+  <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Password">
+  <div class="text-center my-4">
+      <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</div>
+</form>
+</form>
+<div class="contact-title">
+  <span style="color:#DDA15E">Contact</span>
+  <span style="color:#606C38">Me</span>
+</div>
+<div class="contact-me">
+  <div class="email">
+    <label for="email">Email</label>
+    <h2 class="email-contact">isaac.pinon@hgs.hiddengeniusproject.org</h2>
+  <div class="phone">
+    <label for="phone-number">Phone Number</label>
+    <h2 class="number">123 456 7890</h2>  
+  </div>
+</div>
+</body>
+
+</html>
+<style>
+  body {
+      background-color:#FEFAE0;
+    }
+    #navbar {
+      z-index: 10;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color:#BC6C25;
+      border-bottom: 20px #606C38;
+      Border-bottom-style: solid;
+    }
+    nav ul {
+      margin: 20px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 50px;
+      margin-left: 110px;
+    }
+    a {
+      text-decoration: none;
+      color: #606C38;
+      font-size: 35px;
+      font-family: 'poppins', sans-serif;
+    }
+    a:hover {
+      color: #FEFAE0;
+    }
+    .signup-title {
+      margin-top: 155px;
+      font-size: 75px;
+      font-family:'poppins', sans-serif;
+      margin-right: 100px;
+    }
+    .contact-me {
+      height:150px;
+      width: 600px;
+      background-color: #DDA15E;
+      border-radius: 25px;
+      border:  10px solid #606C38;
+      margin-left: 470px;
+      margin-top:50px;
+    }
+    .signup {
+      height:150px;
+      width: 600px;
+      background-color: #DDA15E;
+      border-radius: 25px;
+      border:  10px solid #606C38;
+      margin-left:50px;
+      margin-top: 50px;
+    }
+    input[type="username"], input[type="password"], input[type="submit"] {
+      border-radius: 25px;
+      background-color: #FEFAE0;
+      border-color: #606C38;
+      font-size: 25px;
+      font-family:'poppins', sans-serif;
+      color: #606C38;
+      margin-top: 20px;
+      margin-left: 10px;
+      display: inline-block;
+      text-align: center;
+    }
+    label {
+      font-family:'poppins', sans-serif;
+      color: #606C38;
+      font-size: 25px;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    button {
+      background-color: #FEFAE0;
+      border-radius: 25px;
+      border-color:#606C38;
+      text-align: center;
+      display: inline-block;
+      color: #606C38;
+      margin-left: 50px;
+      border-style: solid;
+      font-family: 'poppins', sans-serif;
+      font-size: 20px;
+    }
+    .email-contact {
+      background-color: #FEFAE0;
+      border-radius: 25px;
+      border-color:#606C38;
+      text-align: center;
+      display: inline-block;
+      color: #606C38;
+      margin-left: 40px;
+      border-style: solid;
+      font-family: 'poppins', sans-serif;
+      font-size:20px;
+      width: 450px;
+    }
+    .number {
+      border-style: solid;
+      background-color: #FEFAE0;
+      border-radius: 25px;
+      border-color:#606C38;
+      text-align: center;
+      display: inline-block;
+      color: #606C38;
+      margin-left: 30px;
+      font-family: 'poppins', sans-serif;
+      font-size:20px;
+      width: 200px;
+    }
+    .contact-title {
+      margin-top: 75px;
+      font-size: 75px;
+      font-family:'poppins', sans-serif;
+      margin-left: 200px;
+    }
+    button:hover {
+      background-color: #606C38;
+      color:#FEFAE0;
+    }
+    .triangle {
+      right: 0%;
+      top: 0%;
+      border-left: 650px solid transparent;
+  	  border-top: 605px solid #283618;
+      position: fixed;
+      z-index:6
+    }
+    .triangle2 {
+      right: 0%;
+      top: 0%;
+      border-left: 450px solid transparent;
+  	  border-top: 405px solid #606C38;
+      position: fixed;
+      z-index:7
+    }
+    .triangle3 {
+      right: 0%;
+      top: 0%;
+      border-left: 275px solid transparent;
+  	  border-top: 300px solid #BC6C25;
+      position: fixed;
+      z-index:8
+    }
+    .triangle4 {
+      right: 0%;
+      top: 0%;
+      border-left: 175px solid transparent;
+  	  border-top: 200px solid #DDA15E;
+      position: fixed;
+      z-index:9
+    }
+</style>

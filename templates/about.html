@@ -1,0 +1,126 @@
+
+<!doctype html>
+<body>
+</head>
+<body>
+  <nav id="navbar">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a href="{{ url_for('index') }}" class="nav-link active" aria-current="page">Gray Tech</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('service') }}" class="nav-link active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('about') }}" class="nav-link active">About</a>
+        <li class="nav-item">
+            <a href="{{ url_for('sign_up') }}" class="nav-link active">Sign Up</a>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+<div class = header>
+  <span style="color:#BC6C25">About</span>
+  <span style="color: #606C38">Me</span>
+</div>
+
+  <img class="mypicture" src="/static/IsaacPicture.png" alt="">
+
+<div class =  mission>
+  <span styl="color: #606C38">Hi, I'm</span>
+  <span style="color:#BC6C25">Isaac Pinon</span>
+  <span style="color:#606C38">Ceo & Founder of Gray</span>
+  <span style="color: #BC6C25">Tech</span>
+  <span style="color: #606C38">I’m a 14 years old Freshman at CSUS, and a current genius at the</span>
+  <span style="color:#BC6C25">Hidden Genius Project</span>
+</div>
+<div class="triangle"></div>
+<div class="triangle2"></div>
+<div class="triangle3"></div>
+</html>
+<style>
+  body {
+      background-color:#FEFAE0;
+    }
+    #navbar {
+      z-index: 2;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      background-color:#BC6C25;
+      border-bottom: 20px #606C38;
+      Border-bottom-style: solid;
+    }
+    nav ul {
+      margin: 20px;
+      padding: 5px 0px 5px 30px;
+    }
+    nav li {
+      display: inline;
+      margin-right: 50px;
+      margin-left: 110px;
+    }
+    a {
+      text-decoration: none;
+      color: #606C38;
+      font-size: 35px;
+      font-family: 'poppins', sans-serif;
+    }
+    a:hover {
+      color: #FEFAE0;
+    }
+    .triangle {
+    position: relative;
+    top: 40%;
+    left: 0%;
+    bottom: 0%;
+    border-right: 165px solid transparent;
+  	border-top: 250px solid #BC6C25;
+    position: fixed;
+    z-index: 5;
+    }
+    .triangle2 {
+    position: relative;
+    left: 0%;
+    bottom: 0%;
+    border-right: 200px solid transparent;
+  	border-bottom: 350px solid #283618;
+    position: fixed;
+    z-index: 3;
+    }
+    .header {
+      margin-top:200px;
+      font-size: 75px;
+      font-family:'poppins', sans-serif;
+      text-align: center;
+    }
+    .mission {
+      margin-top: -75px;
+      margin-left: 100px;
+      font-size: 30px;
+      font-family:'poppins', sans-serif;
+      text-align: center;
+    }
+    .triangle3 {
+      position: relative;
+      right: 0%;
+      bottom: 0%;
+      border-left: 200px solid transparent;
+  	  border-bottom: 200px solid #BC6C25;
+      position: fixed;
+      z-index: 3;
+    }
+
+    .mypicture {
+      display: block;
+      margin-top: -110px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+      height: auto;
+    }
+</style>
